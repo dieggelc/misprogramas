@@ -1,0 +1,105 @@
+/* Variables CSS */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #ffffff;
+    --font-color: #333333;
+    --font-family: 'Inter', sans-serif;
+    --border-radius: 8px;
+    --padding: 16px;
+  }
+  
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--font-color);
+    background-color: #f4f4f4;
+  }
+  
+  /* Header */
+  .header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: var(--padding);
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+  }
+  
+  .nav-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    color: var(--secondary-color);
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--padding);
+  }
+  
+  .card {
+    background-color: var(--secondary-color);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  

@@ -1,0 +1,128 @@
+/* Variables */
+:root {
+    --primary-color: #6C5DD3; /* Morado vibrante */
+    --accent-color: #FF7851; /* Naranja brillante */
+    --background-gradient: linear-gradient(135deg, #1F1D36, #3E3364); /* Fondo oscuro con gradiente */
+    --card-bg: #292B4D; /* Color para la tarjeta de login */
+    --text-color: #E4E4F0; /* Texto claro */
+    --input-bg: #363B5C; /* Fondo de input oscuro */
+    --input-border: #4D5376; /* Bordes más oscuros */
+    --input-focus: #6C5DD3; /* Morado para enfoque */
+    --icon-color: #7C82A1; /* Iconos grisados */
+    --button-hover: #5943C3; /* Morado más intenso */
+    --border-radius: 10px;
+    --padding: 16px;
+  }
+  
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--background-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: var(--text-color);
+  }
+  
+  /* Contenedor principal */
+  .container {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Tarjeta de login */
+  .login-card {
+    background: var(--card-bg);
+    padding: 2.5rem 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: #A0A3BD; /* Texto más suave */
+    margin-bottom: 2rem;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group i {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    color: var(--icon-color);
+    font-size: 1.2rem;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: var(--padding);
+    padding-left: 45px;
+    border: 1px solid var(--input-border);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    background: var(--input-bg);
+    color: var(--text-color);
+  }
+  
+  .input-group input:focus {
+    border-color: var(--input-focus);
+    outline: none;
+    box-shadow: 0 0 5px rgba(108, 93, 211, 0.4);
+  }
+  
+  /* Botón de login */
+  .login-btn {
+    width: 100%;
+    padding: var(--padding);
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: var(--button-hover);
+  }
+  
+  /* Enlace de registro */
+  .register-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #A0A3BD;
+  }
+  
+  .register-link a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  

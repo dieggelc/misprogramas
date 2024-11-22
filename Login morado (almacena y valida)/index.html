@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login Mejorado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <form id="loginForm" class="login-card">
+      <h1 class="title">Iniciar Sesión</h1>
+      <p class="subtitle">¡Bienvenido de nuevo! Por favor, inicia sesión o regístrate.</p>
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="password" name="password" placeholder="Contraseña" required>
+      </div>
+      <button type="submit" class="login-btn">Entrar</button>
+      <button id="registerBtn" type="button" class="register-btn">Registrar</button>
+      <p class="register-link">¿Ya tienes una cuenta? Usa tu correo y contraseña para iniciar sesión.</p>
+      <p id="message" class="message"></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

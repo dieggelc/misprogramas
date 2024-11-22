@@ -1,0 +1,109 @@
+/* Variables CSS */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #ffffff;
+    --font-color: #333333;
+    --font-family: 'Inter', sans-serif;
+    --input-border-color: #cccccc;
+    --input-focus-color: #4caf50;
+    --button-hover-color: #45a049;
+    --border-radius: 8px;
+    --padding: 16px;
+  }
+  
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Contenedor del formulario */
+  .login-container {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Formulario */
+  .login-form h1 {
+    text-align: center;
+    color: var(--font-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--font-color);
+    font-weight: 600;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: var(--padding);
+    border: 1px solid var(--input-border-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    color: var(--font-color);
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: var(--input-focus-color);
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+  }
+  
+  /* Botón de login */
+  .login-btn {
+    width: 100%;
+    padding: var(--padding);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: var(--button-hover-color);
+  }
+  
+  /* Enlace de registro */
+  .register-link {
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--font-color);
+    font-size: 0.9rem;
+  }
+  
+  .register-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  
